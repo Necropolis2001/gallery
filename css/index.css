@@ -1,10 +1,19 @@
 body {
-    background-image: url('/img/Ghost\ Opus\ Epynomous.jpg'); /* Replace 'background-image.jpg' with the path to your background image */
-    background-size: cover; /* Cover the entire viewport */
+    background-image: url('/img/deadly\ carnage\ endless\ blue.jpg'); /* Replace 'background-image.jpg' with the path to your background image */
+    background-size:cover; /* Cover the entire viewport */
     background-repeat: no-repeat; /* Do not repeat the background image */
     background-attachment: fixed; /* Fix the background image in place */
 
   }
+  @font-face {
+    font-family: "lotrfont";
+    src: url(/font/RINGM___.TTF);
+}
+
+@font-face {
+  font-family: "elvenfont";
+  src: url(/font/Elvencommonspeak-0WXz.ttf);
+}
 
   .button-container {
     text-align: center;
@@ -14,18 +23,28 @@ body {
     display: inline-block;
     margin: 0 10px;
     padding: 20px 40px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    font-size: 60px;
+    font-family: 'elvenfont';
+    color: #e7d811;
     text-align: center;
     text-decoration: none;
-    background-color: #14b6da;
-    border-radius: 8px;
+    background-color: #eb8d12;
+    border-radius: 16px;
     border: none;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
   }
   .button:hover {
-    background-color: #13a1c9;
+    background-color: #a97709;
   }
+
+  
+
+#test
+{
+  font-size: 15;
+  font-family: lotrfont;
+  color: #000000;
+
+}
