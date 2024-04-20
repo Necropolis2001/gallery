@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body style="background-color: #6759ff;">
+    <!-- Navigation bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Photo Album</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="canvas.html">Canvas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="gallery" class="gallery-block compact-gallery pb-5">
+        <div class="container">
+            <div class="gallery-heading text-center mb-5">
+                <h2 class="text-uppercase"><br><br>Explore My Gallery</h2>
+            </div>
+            <div class="row no-gutters">
+                <!-- Gallery items go here -->
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Amorphis Skyforger.jpg">
+                        <img class="img-fluid image" src="img/Amorphis Skyforger.jpg"
+                            onclick="loadImage('american-bully.jpg')">
+                        <span class="description">
+                            <span class="description-heading">Skyforger by Amorphis</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Blue Oyster Cult Don't Fear The Reaper.jpg">
+                        <img class="img-fluid image" src="img/Blue Oyster Cult Don't Fear The Reaper.jpg">
+                        <span class="description">
+                            <span class="description-heading">Agent of Fortune by Blue Oyster Cult</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Gojira From Mars to Sirius.jpg">
+                        <img class="img-fluid image" src="img/Gojira From Mars to Sirius.jpg">
+                        <span class="description">
+                            <span class="description-heading">From Mars to Sirius by Gojira</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Leprous Coal.jpg">
+                        <img class="img-fluid image" src="img/Leprous Coal.jpg">
+                        <span class="description">
+                            <span class="description-heading">Coal by Leprous</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Mastodon Blood Mountain.jpg">
+                        <img class="img-fluid image" src="img/Mastodon Blood Mountain.jpg">
+                        <span class="description">
+                            <span class="description-heading">Blood Mountain by Mastodon</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Opeth Still Life.jpg">
+                        <img class="img-fluid image" src="img/Opeth Still Life.jpg">
+                        <span class="description">
+                            <span class="description-heading">Still Life by Opeth</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Megadeth Rust in Peace.jpg">
+                        <img class="img-fluid image" src="img/Megadeth Rust in Peace.jpg">
+                        <span class="description">
+                            <span class="description-heading">Rust in Peace by Megadeth</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Steven Wilson Deadwing.jpg">
+                        <img class="img-fluid image" src="img/Steven Wilson Deadwing.jpg">
+                        <span class="description">
+                            <span class="description-heading">Deadwing by Porcupine Tree</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Steven Wilson In Absentia.jpg">
+                        <img class="img-fluid image" src="img/Steven Wilson In Absentia.jpg">
+                        <span class="description">
+                            <span class="description-heading">In Absentia by Porcupine Tree</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Megadeth Countdown to Extinction.jpg">
+                        <img class="img-fluid image" src="img/Megadeth Countdown to Extinction.jpg">
+                        <span class="description">
+                            <span class="description-heading">Countdown to Extinction by Megadeth</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Mastodon Leviathan.jpg">
+                        <img class="img-fluid image" src="img/Mastodon Leviathan.jpg">
+                        <span class="description">
+                            <span class="description-heading">Leviathan by Mastodon</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="/img/Opeth Ghost Reveries.jpg">
+                        <img class="img-fluid image" src="img/Opeth Ghost Reveries.jpg">
+                        <span class="description">
+                            <span class="description-heading">Ghost Reveries by Opeth</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Opeth Blackwater Park (2).jpg">
+                        <img class="img-fluid image" src="img/Opeth Blackwater Park (2).jpg">
+                        <span class="description">
+                            <span class="description-heading">Blackwater Park by Opeth</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Mastodon Crack the Skye.jpg">
+                        <img class="img-fluid image" src="img/Mastodon Crack the Skye.jpg">
+                        <span class="description">
+                            <span class="description-heading">Crack the Skye by Mastodon</span>
+                        </span>
+                    </a>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/Judas Priest Screaming for Vengeance.jpg">
+                        <img class="img-fluid image" src="img/Judas Priest Screaming for Vengeance.jpg">
+                        <span class="description">
+                            <span class="description-heading"></span>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
