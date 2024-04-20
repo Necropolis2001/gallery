@@ -5,6 +5,7 @@ body {
     background-attachment: fixed; /* Fix the background image in place */
 
   }
+  
   @font-face {
     font-family: "lotrfont";
     src: url(../font/RINGM___.TTF);
