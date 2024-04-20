@@ -5,18 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery</title>
+    <title>Image Processing</title>
     <link rel="stylesheet" href="./css/canvas.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/footer.css">
-
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 </head>
 
-<body style="background-color: #cb2323ec">
+<body style="background-color: #ffffffec">
     <!-- Navigation bar -->
     <header class="border-bottom">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -40,7 +38,7 @@
 
     <div class="nav-wrapper container">
         <span class="nav-header">
-            <h1 style="color: #000000; text-align: center;"><br><br>Welcome to the Canvas Section</h1>
+            <h1 id="text1" style="color: #ffffff; text-align: center;"><br><br>Image Processing</h1>
         </span>
         <ul class="right image-save">
             <button class="btn btn-flat blue white-text" onclick="saveImage()">Save</button>
@@ -49,41 +47,40 @@
     </div>
 
 
-    <section id="'canvas" style="background-color: #2c2c2c43;">
+    <section id="'canvas" style="background-color: #08080843;">
 
         <div class="container mt-5">
             <div><img id="sourceImage" crossorigin="anonymous"></div>
 
-            <div class="image-preview">
+            <div class="image-preview"">
                 <canvas id="canvas" height="0"></canvas>
             </div>
             <div class="container app">
                 <!-- Text to be shown at the beginning of the application -->
                 <div class="help-text center-align">
-                    <h5>Please Select an Image to Start Editing</h5>
+                    <h5 style="color: white;> Please Select an Image to Start Editing</h5>
                 </div>
 
                 <!-- Dropdown list for selecting image names -->
                 <div class="file-controls">
                     <div class="input-field col s12">
                         <select id="imageSelect" onchange="loadImage(this.value)">
-                            <option value="" disabled selected>Select an image</option>
-                            <option value="american-bully.jpg">American Bully</option>
-                            <option value="golden-retriever.jpg">Golden Retriever</option>
-                            <option value="chihuahua.jpg">Chihuahua</option>
-                            <option value="canary-mastiff-presa-canario.jpg">Canary Mastiff Presa Canario</option>
-                            <option value="chow-chow.jpg">Chow-Chow</option>
-                            <option value="dachshund.jpg">Dachshund</option>
-                            <option value="german-shepherd.jpg">German Shepherd</option>
-                            <option value="gorden-setter.jpg">Gorden Setter</option>
-                            <option value="miniature-pinscher.jpg">Miniature Pinscher</option>
-                            <option value="pharaoh-hound.jpg">Pharaoh Hound</option>
-                            <option value="pomeranian.jpg">Pomeranian</option>
-                            <option value="pug.jpg">Pug</option>
-                            <option value="shiba-inu.jpg">Shiba Inu</option>
-                            <option value="tamaskan.jpg">Tamaskan</option>
-                            <option value="shetland_sheepdog.jpg">Shetland Sheepdog</option>
-                            <!-- Add more options as needed -->
+                            <option value="" disabled selected style="color:#ffffff;">Select an image</option>
+                            <option value="Amorphis Skyforger.jpg">Skyforger</option>
+                            <option value="Blue Oyster Cult Don't Fear The Reaper.jpg">Agent of Fortune</option>
+                            <option value="Gojira From Mars to Sirius.jpg">From Mars to Sirius</option>
+                            <option value="Leprous Coal.jpg">Coal</option>
+                            <option value="Mastodon Blood Mountain.jpg">Blood Mountain</option>
+                            <option value="Opeth Still Life.jpg">Still Life</option>
+                            <option value="Megadeth Rust in Peace.jpg">Rust in Peace</option>
+                            <option value="Steven Wilson Deadwing.jpg">Deadwing</option>
+                            <option value="Steven Wilson In Absentia.jpg">In Absentia</option>
+                            <option value="Megadeth Countdown to Extinction.jpg">Countdown to Extinction</option>
+                            <option value="Mastodon Leviathan.jpg">Leviathan</option>
+                            <option value="Opeth Blackwater Park (2).jpg">Ghost Reveries</option>
+                            <option value="Mastodon Crack the Skye.jpg">Crack the Skye</option>
+                            <option value="Judas Priest Screaming for Vengeance.jpg">Screaming for Vengeance</option>
+                                                      <!-- Add more options as needed -->
                         </select>
 
                     </div>

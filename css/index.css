@@ -1,11 +1,11 @@
 body {
     background-image: url('../img/deadlycarnage.jpg'); /* Replace 'background-image.jpg' with the path to your background image */
-    background-size:cover; /* Cover the entire viewport */
-    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-size:50%; /* Cover the entire viewport */
+    background-repeat:repeat; /* Do not repeat the background image */
     background-attachment: fixed; /* Fix the background image in place */
 
   }
-  
+
   @font-face {
     font-family: "lotrfont";
     src: url(../font/RINGM___.TTF);
